@@ -1,0 +1,634 @@
+<html lang="en" data-bs-theme="light">
+ <head> 
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <title>HanxxyTV - Live Streaming TV Online Gratis</title> 
+  <meta name="description" content="ZheTV - FREE Live Streaming Football, Badminton, Football, MotoGP, Formula 1, NBA Basketball,zhetv, ZheTV Apk"> 
+  <link rel="icon" type="image/x-icon" href="favicon.ico"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous"> 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css" rel="stylesheet"> 
+  <style>
+        /* Variabel CSS untuk tema */
+        :root {
+            --primary: #42c16e;
+            --color-link: #42c16e;
+            --body-bg: var(--bs-body-bg);
+            --color-text: var(--bs-body-color);
+            --font-size: 1rem;
+            --font-primary: 'Noto Sans', sans-serif;
+            --font-secondary: Poppins;
+            --svg-size: 22px;
+            --svg-stroke: 1.5;
+            --color-svg: currentColor;
+            --duration: .3s;
+
+            /* Warna Sosial Media */
+            --social-whatsapp: #25D366;
+            --social-facebook: #3b5998;
+            --social-instagram: #c13584; /* Warna dasar Instagram */
+            --social-twitter: #1D9BF0;
+            --social-tiktok: #25F4EE; /* Warna dasar TikTok */
+            --social-telegram: #27A7E7;
+            --social-linkedin: #0A66C2;
+            --social-pinterest: #c8232c;
+            --social-spotify: #1db954;
+            --social-discord: #5865F2;
+            --social-github: #211f1f;
+            --social-youtube: #FF0000;
+            --social-dribbble: #E94C88;
+            --social-medium: #211f1f;
+            --social-paypal: #2997D8;
+            --social-twitch: #6441A4;
+            --social-signal: #237f52;
+            --social-reddit: #FF4500;
+            --social-google-play: #3089AC;
+            --social-envelope: #BB001B;
+            --social-tumblr: #34526f;
+            --social-vk: #4C75A3;
+            --social-threads: #211f1f;
+            --social-shopee: #EE4D2D;
+            --social-tokopedia: #42B549;
+            --social-blibli: #0072FF;
+        }
+
+        /* Tema gelap */
+        [data-bs-theme="dark"] {
+            --color-svg: var(--bs-emphasis-color);
+            --bs-body-bg: #212529; /* Contoh background gelap */
+            --bs-body-color: #f8f9fa; /* Contoh warna teks gelap */
+            --bs-border-color: #495057; /* Contoh warna border gelap */
+            --bs-dropdown-link-active-bg: var(--primary); /* Warna aktif dropdown di tema gelap */
+            --color-svg: #fff; /* Warna SVG di tema gelap */
+        }
+
+        /* Umum */
+        *, ::after, ::before {
+            box-sizing: border-box;
+        }
+        html {
+            line-height: 1.5;
+            -webkit-text-size-adjust: 100%;
+            -webkit-font-smoothing: antialiased;
+        }
+        body, html {
+            height: 100%;
+        }
+        * {
+            margin: 0;
+        }
+        body {
+            font-family: var(--font-secondary);
+            font-size: var(--font-size);
+            min-height: 100%;
+            overflow-x: hidden;
+            background: var(--body-bg);
+            background-size: cover;
+            word-break: break-word;
+            -webkit-hyphens: auto;
+            hyphens: auto;
+        }
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+        ol, ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+        .section {
+            position: relative;
+        }
+        .section + * > .widget:not(:last-child) {
+            margin-bottom: 1rem;
+        }
+        .sector-wrap {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+            margin-bottom: 2rem;
+        }
+        .dropdown-menu {
+            font-size: .875rem;
+            padding: .5rem;
+            --bs-dropdown-link-active-bg: var(--primary);
+        }
+        .dropdown-menu .dropdown-item {
+            border-radius: var(--bs-border-radius);
+        }
+        .dropdown-toggle::after {
+            display: none;
+        }
+        .sticky {
+            position: fixed;
+            top: -20px;
+            left: 0;
+            right: 0;
+            z-index: 1020;
+        }
+        #header > *:not(:last-child) {
+            padding: 16px 20px;
+        }
+        .hiddens {
+            visibility: hidden;
+            position: absolute;
+            top: 0;
+        }
+        .cr-footer {
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        .cr-footer a:hover {
+            color: var(--color-link);
+        }
+
+        /* main css */
+        .hasImage {
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,.05);
+            background-size: 100%;
+            background-position: center;
+            background-repeat: no-repeat;
+            display: block;
+        }
+        .i {
+            width: var(--svg-size,18px);
+            height: var(--svg-size,18px);
+            stroke: var(--color-svg);
+            stroke-width: var(--svg-stroke,2);
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+        .bi {
+            font-size: 18px;
+        }
+        .main.wrapper, footer.wrapper {
+            position: relative;
+            margin-top: 2rem;
+        }
+        .section + * {
+            max-width: 680px;
+            width: 100%;
+            margin: auto;
+        }
+        .section + * {
+            margin-top: 2rem;
+        }
+        .it-template:not(.is-grid) .layout-toggle > *:nth-child(2), .is-grid .layout-toggle > *:nth-child(1) {
+            display: none;
+        }
+        .sticky {
+            transform: translateY(40px);
+            transition: transform .5s;
+            background: rgba(90,90,90,0.12);
+            backdrop-filter: blur(10px);
+            border-radius: 1rem;
+            margin: 0 10px;
+        }
+        .sticky .top-toggle {
+            right: 50px;
+            transform: translate(50%,50%);
+        }
+        .top-toggle {
+            align-items: center;
+            position: absolute;
+            top: 0;
+            right: 0;
+            margin: 0;
+        }
+        .top-toggle > * {
+            padding: .5rem;
+            position: relative;
+            font-size: 12px;
+        }
+        .top-toggle .is-dark .dropdown-menu {
+            --svg-size: 18px;
+        }
+        @media screen and (min-width:768px) {
+            .top-toggle {
+                right: 90px;
+            }
+            .sticky {
+                max-width: calc(788px);
+                margin-right: auto;
+                margin-left: auto;
+                width: 100%;
+            }
+            .sector-wrap {
+                width: calc(100% - 10%);
+            }
+        }
+
+        /* Profile card */
+        .author-profile {
+            margin-top: 5rem;
+        }
+        .author-profile, .sticky-profile {
+            display: flex;
+            align-items: center;
+            gap: .7rem;
+            flex-direction: column;
+            text-align: center;
+        }
+        .author-avatar, .author-avatars {
+            width: 100px;
+            height: 100px;
+            flex: 0 0 100px;
+            border: 1px solid var(--bs-border-color);
+            border-radius: var(--bs-border-radius-pill);
+            overflow: hidden;
+        }
+        .author-desc {
+            --svg-size:14px;
+            --color-svg:#1d9aef;
+        }
+        .author-name, .author-names {
+            font-size: 1.25rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+        .sticky-profile {
+            flex-direction: row;
+            text-align: inherit;
+        }
+        .author-avatars {
+            width: 45px;
+            height: 45px;
+            flex: 0 0 45px;
+        }
+        .author-names {
+            font-size: 1rem;
+            justify-content: start;
+            margin-bottom: .3rem;
+        }
+
+        /* Linktree css */
+        .main-linktree {
+            display: grid;
+            grid-row-gap: 1rem;
+        }
+        .main-linktree .dropdown-menu.show {
+            display: grid;
+            grid-row-gap: 1rem;
+            margin-top: 1rem;
+            font-size: 1rem;
+            position: relative;
+            padding: 0;
+            top: 0;
+            border: none;
+        }
+        .it-template:not(.is-grid) .main-linktree {
+            grid-row-gap: 1rem;
+        }
+        .is-grid .main-linktree:not(.is-linktwo) {
+            grid-template-columns: repeat(auto-fit,minmax(min(100%,var(--cols-min,16rem)),1fr));
+            grid-gap: 1rem;
+            --cols-min: 14rem;
+        }
+        .social-link {
+            position: relative;
+            color: var(--bs-body-color);
+            text-align: center;
+            text-transform: capitalize;
+            display: flex;
+            align-items: center;
+            padding: 14px;
+            border: 1px solid var(--bs-border-color);
+            border-radius: var(--bs-border-radius);
+            transition: all var(--duration) ease;
+            --svg-size:20px;
+        }
+        .social-link svg {
+            flex-shrink: 0;
+        }
+        .social-title {
+            flex-grow: 1;
+        }
+        .social-link:hover {
+            background: var(--primary);
+            color: var(--bs-light);
+            transform: scale(1.02);
+            transition: all var(--duration) ease;
+            border-color: transparent;
+            --color-svg:var(--body-bg);
+            --color-svg:#fff;
+        }
+        .main-linktree .social-link:hover svg {
+            --color-svg:#fff;
+        }
+
+        /* Link alternatif */
+        .is-linktwo {
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            gap: .5rem;
+        }
+        .is-linktwo > * {
+            gap: .5rem;
+            padding: 10px;
+            background: var(--primary);
+            color: var(--bs-light);
+        }
+        .is-linktwo > *:hover {
+            color: var(--color-link);
+            background: none;
+            border-color: var(--bs-border-color);
+            --color-svg:currentColor;
+        }
+
+        /* Animasi fade in */
+        .main-linktree li {
+            opacity: 0;
+            animation-name: fadeInUp;
+            animation-duration: 1s;
+            animation-fill-mode: both;
+            -webkit-animation-name: fadeInUp;
+            -webkit-animation-duration: 1s;
+            -webkit-animation-fill-mode: both;
+        }
+        .main-linktree li:nth-child(1) { animation-delay: 0.0s; }
+        .main-linktree li:nth-child(2) { animation-delay: 0.5s; }
+        .main-linktree li:nth-child(3) { animation-delay: 1.0s; }
+        .main-linktree li:nth-child(4) { animation-delay: 1.5s; }
+        .main-linktree li:nth-child(5) { animation-delay: 2.0s; }
+        .main-linktree li:nth-child(6) { animation-delay: 2.5s; }
+        @keyframes fadeInUp {
+            from { transform: translate3d(0,40px,0) }
+            to { transform: translate3d(0,0,0);opacity: 1 }
+        }
+        @-webkit-keyframes fadeInUp {
+            from { transform: translate3d(0,40px,0) }
+            to { transform: translate3d(0,0,0);opacity: 1 }
+        }
+
+        /* Warna Social Icons */
+        [data-icon*="whatsapp"] {--color-svg:var(--social-whatsapp)}
+        [data-icon*="facebook"] {--color-svg:var(--social-facebook)}
+        [data-icon*="instagram"] {--color-svg:var(--social-instagram)}
+        [data-icon*="twitter"] {--color-svg:var(--social-twitter)}
+        [data-icon*="tiktok"] {--color-svg:var(--social-tiktok)}
+        [data-icon*="telegram"] {--color-svg:var(--social-telegram)}
+        [data-icon*="linkedin"] {--color-svg:var(--social-linkedin)}
+        [data-icon*="pinterest"] {--color-svg:var(--social-pinterest)}
+        [data-icon*="spotify"] {--color-svg:var(--social-spotify)}
+        [data-icon*="discord"] {--color-svg:var(--social-discord)}
+        [data-icon*="github"] {--color-svg:var(--social-github)}
+        [data-icon*="youtube"] {--color-svg:var(--social-youtube)}
+        [data-icon*="dribbble"] {--color-svg:var(--social-dribbble)}
+        [data-icon*="medium"] {--color-svg:var(--social-medium)}
+        [data-icon*="paypal"] {--color-svg:var(--social-paypal)}
+        [data-icon*="twitch"] {--color-svg:var(--social-twitch)}
+        [data-icon*="signal"] {--color-svg:var(--social-signal)}
+        [data-icon*="reddit"] {--color-svg:var(--social-reddit)}
+        [data-icon*="google"] {--color-svg:var(--social-google-play)}
+        [data-icon*="email"] {--color-svg:var(--social-envelope)}
+        [data-icon*="tumblr"] {--color-svg:var(--social-tumblr)}
+        [data-icon*="vk"] {--color-svg:var(--social-vk)}
+        [data-icon*="threads"] {--color-svg:var(--social-threads)}
+        [data-icon*="shopee"] {--color-svg:var(--social-shopee)}
+        [data-icon*="tokopedia"] {--color-svg: var(--social-tokopedia)}
+        [data-icon*="blibli"] {--color-svg: var(--social-blibli)}
+
+        /* Warna hover background */
+        [data-icon*="whatsapp"]:hover {background:var(--social-whatsapp)}
+        [data-icon*="facebook"]:hover {background:var(--social-facebook)}
+        [data-icon*="instagram"]:hover {background:linear-gradient(45deg,#833ab4,var(--social-instagram),#e1306c,#fd1d1d)}
+        [data-icon*="twitter"]:hover {background:var(--social-twitter)}
+        [data-icon*="tiktok"]:hover {background:linear-gradient(30deg,var(--social-tiktok),#000000,#FE2C55)}
+        [data-icon*="telegram"]:hover {background:var(--social-telegram)}
+        [data-icon*="linkedin"]:hover {background:var(--social-linkedin)}
+        [data-icon*="pinterest"]:hover {background:var(--social-pinterest)}
+        [data-icon*="spotify"]:hover {background:var(--social-spotify)}
+        [data-icon*="discord"]:hover {background:var(--social-discord)}
+        [data-icon*="github"]:hover {background:var(--social-github)}
+        [data-icon*="youtube"]:hover {background:var(--social-youtube)}
+        [data-icon*="dribbble"]:hover {background:var(--social-dribbble)}
+        [data-icon*="medium"]:hover {background:var(--social-medium)}
+        [data-icon*="paypal"]:hover {background:var(--social-paypal)}
+        [data-icon*="twitch"]:hover {background:var(--social-twitch)}
+        [data-icon*="reddit"]:hover {background:var(--social-reddit)}
+        [data-icon*="google"]:hover {background:var(--social-google-play)}
+        [data-icon*="email"]:hover {background:var(--social-envelope)}
+        [data-icon*="tumblr"]:hover {background:var(--social-tumblr)}
+        [data-icon*="vk"]:hover {background:var(--social-vk)}
+        [data-icon*="threads"]:hover {background:var(--social-threads)}
+        [data-icon*="shopee"]:hover {background:var(--social-shopee)}
+        [data-icon*="tokopedia"]:hover {background: var(--social-tokopedia)}
+        [data-icon*="blibli"]:hover {background: var(--social-blibli)}
+
+        /* Tambahan untuk mode terang dan gelap dari Bootstrap */
+        html[data-bs-theme="dark"] .social-link {
+            border-color: var(--bs-border-color); /* Pastikan border terlihat di dark mode */
+        }
+        html[data-bs-theme="light"] {
+            --bs-body-bg: #fff;
+            --bs-body-color: #212529;
+            --bs-border-color: #dee2e6;
+        }
+
+        /* Custom SVG Icons (Badge Check and Link) */
+        .i-badge-check {
+            width: 18px; /* Sesuaikan ukuran jika perlu */
+            height: 18px;
+            stroke: var(--color-svg); /* Menggunakan variabel warna SVG */
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+        .i-link {
+            width: 18px; /* Sesuaikan ukuran jika perlu */
+            height: 18px;
+            stroke: var(--color-svg); /* Menggunakan variabel warna SVG */
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+    </style> 
+ </head> 
+ <body class="loader it-template"> 
+  <main class="main wrapper container-xxl"> 
+   <div class="container"> 
+    <div class="header section" id="header" name="Profile Header"> 
+     <div class="widget Image" data-version="2" id="Image1"> 
+      <div class="author-profile"> 
+       <div class="author-avatar"> 
+        <img alt="ZheTV" class="hasImage loaded" data-src="https://blogger.googleusercontent.com/img/a/AVvXsEhsoU1E9piE1kZVlewDahX_kXeO44741Jj8CigxIM_SIdMzHn74cOAyow1K8VIQkBg1reQT3NGpTxYdnM9bPA4ekszlfSBcios5kg6xaaPtq-PjSr7M56wlNJjgPscFgOnlAmoFrFnsl48AkBhpQI_NO1vr7tGa3wwGgf9qduvNT0wV17kl61seIqI845K9=w150-h150-p-k-no-nu" src="https://blogger.googleusercontent.com/img/a/AVvXsEhsoU1E9piE1kZVlewDahX_kXeO44741Jj8CigxIM_SIdMzHn74cOAyow1K8VIQkBg1reQT3NGpTxYdnM9bPA4ekszlfSBcios5kg6xaaPtq-PjSr7M56wlNJjgPscFgOnlAmoFrFnsl48AkBhpQI_NO1vr7tGa3wwGgf9qduvNT0wV17kl61seIqI845K9=w150-h150-p-k-no-nu" loading="lazy"> 
+       </div> 
+       <span class="author-desc"> <h3 class="author-name" data-text="ZheTV"> <span class="name">-> HanxxyTV</span> 
+         <svg class="i i-badge-check" viewbox="0 0 24 24"> 
+          <path d="m8.5 12.5 2 2 5-5m4.3 5.7a1 1 0 0 0 0-6.4 1 1 0 0 0-4.6-4.6 1 1 0 0 0-6.4 0 1 1 0 0 0-4.6 4.6 1 1 0 0 0 0 6.4 1 1 0 0 0 4.6 4.6 1 1 0 0 0 6.4 0 1 1 0 0 0 4.6-4.6Z"></path> 
+         </svg> </h3> <span class="author-about">Nonton TV Online Lengkap Nikmati Secara Gratis!</span> </span> 
+      </div> 
+     </div> 
+     <div class="widget TextList" data-version="2" id="TextList000"> 
+      <ul class="top-toggle list-unstyled d-flex"> 
+       <li class="dropdown is-dark"> <label aria-expanded="false" aria-label="Dark Mode (dark)" class="theme-toggle dropdown-toggle" data-bs-display="static" data-bs-toggle="dropdown"> 
+         <svg class="i i-sun" viewbox="0 0 24 24"> 
+          <circle cx="12" cy="12" r="5"></circle>
+          <path d="M12 1v2m0 18v2M4.2 4.2l1.4 1.4m12.8 12.8 1.4 1.4M1 12h2m18 0h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path> 
+         </svg> <span class="d-none" id="bd-theme-text">Dark Mode</span> </label> 
+        <ul class="dropdown-menu dropdown-menu-end shadow-sm rounded"> 
+         <label aria-label="Dark Mode" class="titledark px-3 fw-medium">Dark Mode</label> 
+         <hr class="dropdown-divider"> 
+         <li> <button class="dropdown-item d-flex align-items-center gap-2" data-bs-theme-value="dark" type="button" aria-pressed="false"> 
+           <svg class="i i-moon" viewbox="0 0 24 24"> 
+            <path d="M21 14a9 9 0 1 1-9-11 7 7 0 0 0 9 11z"></path> 
+           </svg> <span>Dark</span> </button> </li> 
+         <li> <button class="dropdown-item d-flex align-items-center gap-2 active" data-bs-theme-value="light" type="button" aria-pressed="true"> 
+           <svg class="i i-sun" viewbox="0 0 24 24"> 
+            <circle cx="12" cy="12" r="5"></circle>
+            <path d="M12 1v2m0 18v2M4.2 4.2l1.4 1.4m12.8 12.8 1.4 1.4M1 12h2m18 0h2M4.2 19.8l1.4-1.4M18.4 5.6l1.4-1.4"></path> 
+           </svg> <span>Light</span> </button> </li> 
+         <li> <button class="dropdown-item d-flex align-items-center gap-2" data-bs-theme-value="auto" type="button" aria-pressed="false"> 
+           <svg class="i i-devices" viewbox="0 0 24 24"> 
+            <path d="M1 19h12m0-3H4a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2v3"></path>
+            <rect height="10" rx="2" width="6" x="17" y="12"></rect> 
+           </svg> <span>Auto</span> </button> </li> 
+        </ul> </li> 
+      </ul> 
+     </div> 
+    </div> 
+    <div class="it-linktree-main section" id="it-linktree-main" name="Main Menu"> 
+     <div class="widget LinkList" data-version="2" id="LinkList101"> 
+      <ul class="main-linktree" id="main-linktree" role="menubar"> 
+       <li class="parent"> <a class="social-link is-multi" data-icon="Download APK V2.2.2" href="https://sfile.mobi/0lxWfRg3k7A" role="menuitem"> 
+         <svg class="i i-link" viewbox="0 0 24 24"> 
+          <path d="M9 13a5 5 0 0 0 8 1l4-4a1 1 0 0 0-7-7l-2 2m3 6a5 5 0 0 0-8-1l-4 4a1 1 0 0 0 7 7l2-2"></path> 
+         </svg> <span class="social-title">Download APK V1.01_New</span> </a> </li> 
+       
+       <li class="parent"> <a class="social-link is-multi" data-icon="Pay License Key" href="https://hanxxy-modzz-apk.vercel.app/" role="menuitem"> 
+         <svg class="i i-link" viewbox="0 0 24 24"> 
+          <path d="M9 13a5 5 0 0 0 8 1l4-4a1 1 0 0 0-7-7l-2 2m3 6a5 5 0 0 0-8-1l-4 4a1 1 0 0 0 7 7l2-2"></path> 
+         </svg> <span class="social-title">Support Developers</span> </a> </li> 
+       
+      </ul> 
+     </div> 
+    </div> 
+    <div class="linktree-two section" id="linktree-two" name="Linktree Alternatif"> 
+     <div class="widget Text" data-version="2" id="Text1"> 
+      <div class="sector-wrap"> 
+       <div class="sector-title d-flex flex-wrap justify-content-center gap-2"> 
+        <svg class="i i-coffee" viewbox="0 0 24 24"> 
+         <path d="M6 2v3m4-3v3m4-3v3m4 4v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V9h17a1 1 0 0 1 0 8h-1"></path> 
+        </svg> 
+        <h3 class="fs-5 fw-semibold">Baca Disclaimer</h3> 
+       </div> 
+       <div class="sector-subtittle small text-body-secondary mt-2 opacity-75">
+         Situs ini hanya mendistribusikan tayangan daring yang dihosting oleh server pihak ketiga, tidak berafiliasi dengan saluran televisi mana pun. Semua konten adalah hak cipta dari pemiliknya masing-masing, tanpa penyimpanan dan produksi apa pun.
+       </div> 
+      </div> 
+     </div> 
+    </div> 
+   </div> 
+  </main> 
+  <footer class="footer wrapper container border-top py-3 py-md-4 px-4 px-md-2" id="footer-wrapper"> 
+   <div class="footer-copyright d-flex cr-footer flex-wrap"> 
+    <small class="credit">© <span id="getYear">2025</span> ‧ <a href="#">HanxxyTV - Live Streaming TV Online Lengkap Gratis!</a>. <br>All rights reserved.</small> 
+    <small class="creator">Developer by <a class="it" href="#" target="_blank" rel="noopener" title="InpuTekno">HanxxyModz</a></small> 
+   </div> 
+  </footer> 
+  <script type="text/javascript">
+        // Skrip untuk Dark Mode Toggle (disederhanakan dari Bootstrap Docs)
+        (() => {
+            'use strict';
+            const getStoredTheme = () => localStorage.getItem('theme');
+            const setStoredTheme = theme => localStorage.setItem('theme', theme);
+
+            const getPreferredTheme = () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme) {
+                    return storedTheme;
+                }
+                return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+            };
+
+            const setTheme = theme => {
+                if (theme === 'auto' && window.matchMedia('(prefers-color-scheme: dark)').matches) {
+                    document.documentElement.setAttribute('data-bs-theme', 'dark');
+                } else {
+                    document.documentElement.setAttribute('data-bs-theme', theme);
+                }
+            };
+
+            setTheme(getPreferredTheme());
+
+            const showActiveTheme = (theme, focus = false) => {
+                const themeToggle = document.querySelector('.theme-toggle');
+                if (!themeToggle) {
+                    return;
+                }
+
+                const activeThemeIcon = document.querySelector('.theme-toggle svg');
+                const btnToActive = document.querySelector(`[data-bs-theme-value="${theme}"]`);
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(element => {
+                    element.classList.remove('active');
+                    element.setAttribute('aria-pressed', 'false');
+                });
+
+                btnToActive.classList.add('active');
+                btnToActive.setAttribute('aria-pressed', 'true');
+                activeThemeIcon.innerHTML = btnToActive.querySelector('svg').innerHTML;
+                activeThemeIcon.setAttribute('class', btnToActive.querySelector('svg').getAttribute('class'));
+                
+                if (focus) {
+                    themeToggle.focus();
+                }
+            };
+
+            window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', () => {
+                const storedTheme = getStoredTheme();
+                if (storedTheme !== 'light' && storedTheme !== 'dark') {
+                    setTheme(getPreferredTheme());
+                }
+            });
+
+            window.addEventListener('DOMContentLoaded', () => {
+                showActiveTheme(getPreferredTheme());
+
+                document.querySelectorAll('[data-bs-theme-value]').forEach(toggle => {
+                    toggle.addEventListener('click', () => {
+                        const theme = toggle.getAttribute('data-bs-theme-value');
+                        setStoredTheme(theme);
+                        setTheme(theme);
+                        showActiveTheme(theme, true);
+                    });
+                });
+
+                // Update year in footer
+                document.getElementById('getYear').textContent = new Date().getFullYear();
+            });
+        })();
+
+        // Simple script for lazy loading (can be expanded if needed)
+        document.addEventListener('DOMContentLoaded', () => {
+            const lazyImages = document.querySelectorAll('img.lazy');
+            const observer = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        const img = entry.target;
+                        img.src = img.dataset.src;
+                        img.classList.remove('lazy');
+                        img.classList.add('loaded');
+                        observer.unobserve(img);
+                    }
+                });
+            });
+
+            lazyImages.forEach(img => {
+                observer.observe(img);
+            });
+        });
+    </script> 
+ </body>
+</html>
